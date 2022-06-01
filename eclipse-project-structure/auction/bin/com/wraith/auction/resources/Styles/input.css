@@ -1,0 +1,14 @@
+.input
+{
+    -fx-background-color: #191919;
+    -fx-border-style:  hidden hidden solid hidden;
+    -fx-border-width: 2;
+    -fx-border-radius: 1;
+    -fx-background-radius: 5;
+    -fx-text-fill: #CCCCCC;
+}
+
+.admin-input { -fx-border-color:  #2F8C75; }
+.bidder-input { -fx-border-color:  #8C592F; }
+.seller-input { -fx-border-color:  #2F7E8C; }
+.auth-input { -fx-border-color:  #8c322f; }

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.wraith.auction.controllers.UI.Admin.AdminHomeController">
+   <AnchorPane prefHeight="500.0" prefWidth="800.0" style="-fx-background-color: #202020;">
+      <AnchorPane prefHeight="58.0" prefWidth="800.0" style="-fx-background-color: #191919; -fx-border-style: hidden hidden solid hidden; -fx-border-width: 1; -fx-border-color: #2F8C75;">
+         <Label layoutX="24.0" layoutY="14.0" text="All In" textFill="#cccccc">
+            <font>
+               <Font name="Calibri Bold" size="18.0" />
+            </font>
+         </Label>
+         <Label layoutX="14.0" layoutY="25.0" text="Auction" textFill="#cccccc">
+            <font>
+               <Font name="Calibri Bold" size="18.0" />
+            </font>
+         </Label>
+         <Label layoutX="712.0" layoutY="18.0" text="Welcome back" textFill="#cccccc">
+            <font>
+               <Font name="Calibri Bold" size="12.0" />
+            </font>
+         </Label>
+         <Label fx:id="welcome" layoutX="729.0" layoutY="29.0" text=" " textFill="#2f8c75">
+            <font>
+               <Font name="Calibri Bold" size="12.0" />
+            </font>
+         </Label>
+         <Label layoutX="186.0" layoutY="22.0" text="HOME" textFill="#2f8c75">
+            <font>
+               <Font name="Calibri" size="14.0" />
+            </font>
+         </Label>
+         <Label styleClass="admin-menu-text" layoutX="272.0" layoutY="22.0" onMouseClicked="#acceptBids" text="BIDS" textFill="#cccccc">
+            <font>
+               <Font name="Calibri" size="14.0" />
+            </font>
+         </Label>
+         <Label styleClass="admin-menu-text" layoutX="342.0" layoutY="22.0" onMouseClicked="#searchUser" text="SEARCH USER" textFill="#cccccc">
+            <font>
+               <Font name="Calibri" size="14.0" />
+            </font>
+         </Label>
+         <Label styleClass="admin-menu-text" layoutX="463.0" layoutY="22.0" onMouseClicked="#adminHistory" text="HISTORY" textFill="#cccccc">
+            <font>
+               <Font name="Calibri" size="14.0" />
+            </font>
+         </Label>
+         <Label styleClass="admin-menu-text" layoutX="561.0" layoutY="22.0" onMouseClicked="#logOut" text="LOG OUT" textFill="#cccccc">
+            <font>
+               <Font name="Calibri" size="14.0" />
+            </font>
+         </Label>
+      </AnchorPane>
+      <Label layoutX="358.0" layoutY="86.0" text="HOME" textFill="#cccccc">
+         <font>
+            <Font name="Calibri" size="24.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="150.0" fitWidth="152.0" layoutX="136.0" layoutY="175.0" pickOnBounds="true" preserveRatio="true">
+         <Image url="@Admin.png" />
+      </ImageView>
+      <Label layoutX="330.0" layoutY="187.0" text="Name:" textFill="#cccccc">
+         <font>
+            <Font name="Calibri" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="342.0" layoutY="208.0" text="Sex:" textFill="#cccccc">
+         <font>
+            <Font name="Calibri" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="317.0" layoutY="229.0" text="Account:" textFill="#cccccc">
+         <font>
+            <Font name="Calibri" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="291.0" layoutY="250.0" text="Items to check:" textFill="#cccccc">
+         <font>
+            <Font name="Calibri" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="332.0" layoutY="271.0" text="Date:" textFill="#cccccc">
+         <font>
+            <Font name="Calibri" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="nameLabel" layoutX="401.0" layoutY="187.0" text=" " textFill="#cccccc">
+         <font>
+            <Font name="Calibri Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="sexLabel" layoutX="402.0" layoutY="209.0" text=" " textFill="#cccccc">
+         <font>
+            <Font name="Calibri Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="402.0" layoutY="229.0" text="Admin" textFill="#cccccc">
+         <font>
+            <Font name="Calibri Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="itemsCounterLabel" layoutX="402.0" layoutY="251.0" text=" " textFill="#2F8C75">
+         <font>
+            <Font name="Calibri Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="dateLabel" layoutX="402.0" layoutY="271.0" text=" " textFill="#cccccc">
+         <font>
+            <Font name="Calibri Bold" size="12.0" />
+         </font>
+      </Label>
+      <Button onAction="#categoriesClicked" layoutX="294.0" layoutY="289.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="192.0" styleClass="admin-button" text="CATEGORY SETTINGS">
+         <font>
+            <Font name="Calibri Bold" size="18.0" />
+         </font>
+      </Button>
+   </AnchorPane>
+</VBox>

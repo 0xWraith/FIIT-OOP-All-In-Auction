@@ -1,0 +1,13 @@
+INDEX VERSION 1.131+C:\Users\Admin\Desktop\eclipse-auction\.metadata\.plugins\org.eclipse.jdt.core
+606278413.index
+2700623975.index
+3692009922.index
+2738818540.index
+2607262944.index
+3651631773.index
+2017587118.index
+2742449781.index
+1219591349.index
+3787421656.index
+1865797976.index
+1769049084.index

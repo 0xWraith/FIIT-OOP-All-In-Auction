@@ -1,0 +1,15 @@
+module:com.wraith.auction
+com.wraith.auction
+com.wraith.auction.classes.Adapters
+com.wraith.auction.classes.Auction
+com.wraith.auction.classes.InfoBox
+com.wraith.auction.classes.User
+com.wraith.auction.controllers
+com.wraith.auction.controllers.UI.Admin
+com.wraith.auction.controllers.UI.Auth
+com.wraith.auction.controllers.UI.Bidder
+com.wraith.auction.controllers.UI.InfoBox
+com.wraith.auction.controllers.UI.Seller
+com.wraith.auction.database
+com.wraith.auction.exceptions
+com.wraith.auction.interfaces

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.wraith.auction.controllers.UI.Admin.AdminHistoryController">
+   <AnchorPane prefHeight="500.0" prefWidth="800.0" style="-fx-background-color: #202020;">
+      <AnchorPane prefHeight="58.0" prefWidth="800.0" style="-fx-background-color: #191919; -fx-border-style: hidden hidden solid hidden; -fx-border-width: 1; -fx-border-color: #2F8C75;">
+         <Label layoutX="24.0" layoutY="14.0" text="All In" textFill="#cccccc">
+            <font>
+               <Font name="Calibri Bold" size="18.0" />
+            </font>
+         </Label>
+         <Label layoutX="14.0" layoutY="25.0" text="Auction" textFill="#cccccc">
+            <font>
+               <Font name="Calibri Bold" size="18.0" />
+            </font>
+         </Label>
+         <Label layoutX="712.0" layoutY="18.0" text="Welcome back" textFill="#cccccc">
+            <font>
+               <Font name="Calibri Bold" size="12.0" />
+            </font>
+         </Label>
+         <Label fx:id="welcome" layoutX="729.0" layoutY="29.0" text=" " textFill="#2f8c75">
+            <font>
+               <Font name="Calibri Bold" size="12.0" />
+            </font>
+         </Label>
+         <Label styleClass="admin-menu-text" layoutX="186.0" layoutY="22.0" onMouseClicked="#adminHome" text="HOME" textFill="#cccccc">
+            <font>
+               <Font name="Calibri" size="14.0" />
+            </font>
+         </Label>
+         <Label styleClass="admin-menu-text" layoutX="272.0" layoutY="22.0" onMouseClicked="#acceptBids" text="BIDS" textFill="#cccccc">
+            <font>
+               <Font name="Calibri" size="14.0" />
+            </font>
+         </Label>
+         <Label styleClass="admin-menu-text" layoutX="342.0" layoutY="22.0" onMouseClicked="#searchUser" text="SEARCH USER" textFill="#cccccc">
+            <font>
+               <Font name="Calibri" size="14.0" />
+            </font>
+         </Label>
+         <Label layoutX="463.0" layoutY="22.0" onMouseClicked="#adminHistory" text="HISTORY" textFill="#2f8c75">
+            <font>
+               <Font name="Calibri" size="14.0" />
+            </font>
+         </Label>
+         <Label styleClass="admin-menu-text" layoutX="561.0" layoutY="22.0" onMouseClicked="#logOut" text="LOG OUT" textFill="#cccccc">
+            <font>
+               <Font name="Calibri" size="14.0" />
+            </font>
+         </Label>
+      </AnchorPane>
+
+      <Label layoutX="358.0" layoutY="86.0" text="HISTORY" textFill="#cccccc">
+         <font>
+            <Font name="Calibri" size="24.0" />
+         </font>
+      </Label>
+
+      <TableView fx:id="historyTable" layoutX="89.0" layoutY="126.0" prefHeight="330.0" prefWidth="622.0">
+         <columns>
+            <TableColumn fx:id="colID" prefWidth="39.200019121170044" text="ID" />
+            <TableColumn fx:id="colName" prefWidth="107.19998550415039" text="Name" />
+            <TableColumn fx:id="colDescription" prefWidth="169.6000213623047" text="Description" />
+            <TableColumn fx:id="colStartPrice" minWidth="0.0" prefWidth="84.800048828125" text="Starting price" />
+            <TableColumn fx:id="colEndPrice" prefWidth="78.79995727539062" text="Current price" />
+            <TableColumn fx:id="colOwner" prefWidth="138.39996337890625" text="Owner name" />
+         </columns>
+      </TableView>
+   </AnchorPane>
+</VBox>

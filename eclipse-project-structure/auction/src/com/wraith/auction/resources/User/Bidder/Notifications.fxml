@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.wraith.auction.controllers.UI.Bidder.BidderNotificationsController">
+   <AnchorPane prefHeight="500.0" prefWidth="800.0" style="-fx-background-color: #202020;">
+      <AnchorPane prefHeight="58.0" prefWidth="800.0" style="-fx-background-color: #191919; -fx-border-style: hidden hidden solid hidden; -fx-border-width: 1; -fx-border-color: #8c592f;">
+         <Label layoutX="24.0" layoutY="14.0" text="All In" textFill="#cccccc">
+            <font>
+               <Font name="Calibri Bold" size="18.0" />
+            </font>
+         </Label>
+         <Label layoutX="14.0" layoutY="25.0" text="Auction" textFill="#cccccc">
+            <font>
+               <Font name="Calibri Bold" size="18.0" />
+            </font>
+         </Label>
+         <Label layoutX="712.0" layoutY="18.0" text="Welcome back" textFill="#cccccc">
+            <font>
+               <Font name="Calibri Bold" size="12.0" />
+            </font>
+         </Label>
+         <Label fx:id="welcome" layoutX="729.0" layoutY="29.0" text=" " textFill="#8c592f">
+            <font>
+               <Font name="Calibri Bold" size="12.0" />
+            </font>
+         </Label>
+         <Label styleClass="bidder-menu-text" layoutX="186.0" layoutY="22.0" text="HOME" onMouseClicked="#bidderHome" textFill="#cccccc">
+            <font>
+               <Font name="Calibri" size="14.0" />
+            </font>
+         </Label>
+         <Label styleClass="bidder-menu-text" layoutX="272.0" layoutY="22.0" text="BIDS" onMouseClicked="#bidsList" textFill="#cccccc">
+            <font>
+               <Font name="Calibri" size="14.0" />
+            </font>
+         </Label>
+         <Label styleClass="bidder-menu-text" layoutX="342.0" layoutY="22.0" text="HISTORY" onMouseClicked="#bidderHistory" textFill="#cccccc">
+            <font>
+               <Font name="Calibri" size="14.0" />
+            </font>
+         </Label>
+         <Label styleClass="bidder-menu-text" layoutX="561.0" layoutY="22.0" text="LOG OUT" onMouseClicked="#logOut" textFill="#cccccc">
+            <font>
+               <Font name="Calibri" size="14.0" />
+            </font>
+         </Label>
+      </AnchorPane>
+      <Label layoutX="323.0" layoutY="85.0" text="NOTIFICATIONS" textFill="#cccccc">
+         <font>
+            <Font name="Calibri" size="24.0" />
+         </font>
+      </Label>
+      <TableView fx:id="notificationsTable" layoutX="89.0" layoutY="126.0" prefHeight="330.0" prefWidth="622.0">
+         <columns>
+            <TableColumn fx:id="colID" prefWidth="63.600006103515625" text="ID" />
+            <TableColumn fx:id="colMessage" prefWidth="457.59996032714844" text="Message" />
+            <TableColumn fx:id="colDate" minWidth="0.0" prefWidth="100.39996337890625" text="Date" />
+         </columns>
+      </TableView>
+   </AnchorPane>
+</VBox>

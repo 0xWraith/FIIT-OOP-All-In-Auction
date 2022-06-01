@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="500.0" prefWidth="800.0" style="-fx-background-color: #202020;" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.wraith.auction.controllers.UI.Auth.StartController">
+   <AnchorPane prefHeight="58.0" prefWidth="800.0" style="-fx-background-color: #191919; -fx-border-style: hidden hidden solid hidden; -fx-border-width: 1; -fx-border-color: #8c322f;">
+      <Label layoutX="24.0" layoutY="14.0" text="All In" textFill="#cccccc">
+         <font>
+            <Font name="Calibri Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="25.0" text="Auction" textFill="#cccccc">
+         <font>
+            <Font name="Calibri Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="712.0" layoutY="22.0" text="WELCOME BACK" textFill="#cccccc">
+         <font>
+            <Font name="Calibri Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="welcome" layoutX="729.0" layoutY="29.0" text=" " textFill="#2f8c75">
+         <font>
+            <Font name="Calibri Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="186.0" layoutY="22.0" text="HOME" textFill="#8c322f">
+         <font>
+            <Font name="Calibri" size="14.0" />
+         </font>
+      </Label>
+   </AnchorPane>
+
+   <Label layoutX="324.0" layoutY="89.0" text="WELCOME BACK!" textFill="#cccccc">
+      <font>
+         <Font name="Calibri" size="24.0" />
+      </font>
+   </Label>
+
+   <Button id="loginButton" layoutX="296.0" layoutY="224.0" mnemonicParsing="false" onAction="#onLoginButtonClick" prefHeight="37.0" prefWidth="227.0" styleClass="auth-button" text="AUTHORIZATION" AnchorPane.bottomAnchor="251.0" AnchorPane.leftAnchor="296.0" AnchorPane.rightAnchor="277.0" />
+   <Button id="registerButton" layoutX="296.0" layoutY="266.0" mnemonicParsing="false" onAction="#onRegButtonClick" prefHeight="37.0" prefWidth="227.0" styleClass="auth-button" text="REGISTRATION" AnchorPane.bottomAnchor="196.8" AnchorPane.leftAnchor="296.0" AnchorPane.rightAnchor="277.0" />
+</AnchorPane>

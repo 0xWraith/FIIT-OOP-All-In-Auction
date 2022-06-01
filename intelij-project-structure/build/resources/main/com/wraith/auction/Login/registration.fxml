@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.wraith.auction.controllers.UI.Auth.RegistrationController">
+   <AnchorPane prefHeight="500.0" prefWidth="800.0" style="-fx-background-color: #202020;">
+      <AnchorPane prefHeight="58.0" prefWidth="800.0" style="-fx-background-color: #191919; -fx-border-style: hidden hidden solid hidden; -fx-border-width: 1; -fx-border-color: #8c322f;">
+         <Label layoutX="24.0" layoutY="14.0" text="All In" textFill="#cccccc">
+            <font>
+               <Font name="Calibri Bold" size="18.0" />
+            </font>
+         </Label>
+         <Label layoutX="14.0" layoutY="25.0" text="Auction" textFill="#cccccc">
+            <font>
+               <Font name="Calibri Bold" size="18.0" />
+            </font>
+         </Label>
+         <Label layoutX="712.0" layoutY="22.0" text="REGISTRATION" textFill="#8C322F">
+            <font>
+               <Font name="Calibri Bold" size="12.0" />
+            </font>
+         </Label>
+         <Label styleClass="auth-menu-text" layoutX="186.0" layoutY="22.0" onMouseClicked="#regGoBack" text="BACK" textFill="#CCC">
+            <font>
+               <Font name="Calibri" size="14.0" />
+            </font>
+         </Label>
+      </AnchorPane>
+
+      <Label layoutX="317.0" layoutY="89.0" text="REGISTRATION" textFill="#cccccc">
+         <font>
+            <Font name="Calibri" size="24.0" />
+         </font>
+      </Label>
+
+      <Label layoutX="288.0" layoutY="187.0" text="First name:" textFill="#cccccc">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="firstNameInput" layoutX="362.0" layoutY="181.0" prefHeight="27.0" prefWidth="163.0" styleClass="input, auth-input" />
+      <Label layoutX="288.0" layoutY="223.0" text="Last name:" textFill="#cccccc">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="lastNameInput" layoutX="362.0" layoutY="217.0" prefHeight="27.0" prefWidth="163.0" styleClass="input, auth-input" />
+      <Label layoutX="314.0" layoutY="261.0" text="E-Mail:" textFill="#cccccc">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="mailInput" layoutX="362.0" layoutY="255.0" prefHeight="27.0" prefWidth="163.0" styleClass="input, auth-input" />
+      <Label layoutX="329.0" layoutY="335.0" text="Sex:" textFill="#cccccc">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="maleButton" layoutX="380.0" layoutY="334.0" mnemonicParsing="false" selected="true" styleClass="auth-radio-button" text="Male" />
+      <RadioButton fx:id="femaleButton" layoutX="446.0" layoutY="334.0" mnemonicParsing="false" styleClass="auth-radio-button" text="Female" />
+      <Label layoutX="324.0" layoutY="361.0" text="User:" textFill="#cccccc">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="sellerButton" layoutX="380.0" layoutY="360.0" mnemonicParsing="false" selected="true" styleClass="auth-radio-button" text="Seller" />
+      <RadioButton fx:id="bidderButton" layoutX="446.0" layoutY="360.0" mnemonicParsing="false" styleClass="auth-radio-button" text="Bidder" />
+      <Button layoutX="254.0" layoutY="410.0" mnemonicParsing="false" onAction="#createAccount" prefHeight="40.0" prefWidth="300.0" styleClass="auth-button" text="REGISTER">
+         <font>
+            <Font name="Calibri Bold" size="18.0" />
+         </font>
+      </Button>
+      <Label fx:id="errorLabel" alignment="CENTER" layoutX="343.0" layoutY="94.0" text=" " textAlignment="CENTER" />
+      <Label layoutX="316.0" layoutY="151.0" text="Login:" textFill="#cccccc">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="loginInput" layoutX="362.0" layoutY="145.0" prefHeight="27.0" prefWidth="163.0" styleClass="input, auth-input" />
+      <Label layoutX="293.0" layoutY="299.0" text="Password:" textFill="#cccccc">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="passwordInput" layoutX="362.0" layoutY="293.0" prefHeight="27.0" prefWidth="163.0" styleClass="input, auth-input" />
+   </AnchorPane>
+</VBox>

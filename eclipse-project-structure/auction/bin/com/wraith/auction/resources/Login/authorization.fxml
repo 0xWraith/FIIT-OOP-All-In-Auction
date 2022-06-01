@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.wraith.auction.controllers.UI.Auth.LoginController">
+   <AnchorPane prefHeight="500.0" prefWidth="800.0" style="-fx-background-color: #202020;">
+      <AnchorPane prefHeight="58.0" prefWidth="800.0" style="-fx-background-color: #191919; -fx-border-style: hidden hidden solid hidden; -fx-border-width: 1; -fx-border-color: #8c322f;">
+         <Label layoutX="24.0" layoutY="14.0" text="All In" textFill="#cccccc">
+            <font>
+               <Font name="Calibri Bold" size="18.0" />
+            </font>
+         </Label>
+         <Label layoutX="14.0" layoutY="25.0" text="Auction" textFill="#cccccc">
+            <font>
+               <Font name="Calibri Bold" size="18.0" />
+            </font>
+         </Label>
+         <Label layoutX="712.0" layoutY="22.0" text="AUTHORIZATION" textFill="#8c322f">
+            <font>
+               <Font name="Calibri Bold" size="12.0" />
+            </font>
+         </Label>
+         <Label styleClass="auth-menu-text" layoutX="186.0" layoutY="22.0" onMouseClicked="#authGoBack" text="BACK" textFill="#CCC">
+            <font>
+               <Font name="Calibri" size="14.0" />
+            </font>
+         </Label>
+      </AnchorPane>
+
+      <Label layoutX="317.0" layoutY="89.0" text="AUTHORIZATION" textFill="#cccccc">
+         <font>
+            <Font name="Calibri" size="24.0" />
+         </font>
+      </Label>
+
+      <Label layoutX="316.0" layoutY="151.0" text="Login:" textFill="#cccccc">
+         <font>
+            <Font name="Calibri" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="loginInput" layoutX="362.0" layoutY="145.0" prefHeight="27.0" prefWidth="163.0" styleClass="input, auth-input" />
+      <Label layoutX="288.0" layoutY="187.0" text="Password:" textFill="#cccccc">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="passwordInput" layoutX="362.0" layoutY="181.0" prefHeight="27.0" prefWidth="163.0" styleClass="input, auth-input" />
+      <Label fx:id="errorLabel" alignment="CENTER" layoutX="344.0" layoutY="216.0" text=" " textAlignment="CENTER" textFill="#8c322f" />
+      <Button layoutX="250.0" layoutY="250.0" mnemonicParsing="false" onAction="#onPressedLogin" prefHeight="40.0" prefWidth="300.0" styleClass="auth-button" text="LOG IN">
+         <font>
+            <Font name="Arial Black" size="12.0" />
+         </font>
+      </Button>
+   </AnchorPane>
+</VBox>

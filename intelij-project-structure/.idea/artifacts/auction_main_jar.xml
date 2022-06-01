@@ -1,0 +1,17 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="auction.main:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/auction_main_jar</output-path>
+    <root id="archive" name="auction.main.jar">
+      <element id="module-output" name="auction.main" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/mysql/mysql-connector-java/8.0.11/2c3d25fe1dfdd6496e0bbe47d67809f67487cfba/mysql-connector-java-8.0.11.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.openjfx/javafx-graphics/11.0.2/e522eb4ea422eceeee207b1c266ba3db19b2343a/javafx-graphics-11.0.2.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.openjfx/javafx-base/11.0.2/7fb2e4a8528ec9e434a9ac9ee98b39af79e6dcb8/javafx-base-11.0.2.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.openjfx/javafx-base/11.0.2/1852e57b8cf9a9b6488c33605bccd5d06ff210e1/javafx-base-11.0.2-win.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.protobuf/protobuf-java/2.6.0/88ba32feefe385d5dc284b71f649201eabd15778/protobuf-java-2.6.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.openjfx/javafx-fxml/11.0.2/b3242e4c031558574de2a1da685bb5fcdbb8a530/javafx-fxml-11.0.2-win.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.openjfx/javafx-controls/11.0.2/4ab633cf1eea60f76e2ae9905aedac862da88b08/javafx-controls-11.0.2.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.openjfx/javafx-graphics/11.0.2/20459ea2cf714942bcbeb78a7f70ba3531dc1a44/javafx-graphics-11.0.2-win.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.openjfx/javafx-controls/11.0.2/6c763707769c18adce406904c771c2ad1fcc370b/javafx-controls-11.0.2-win.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
